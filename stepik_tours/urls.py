@@ -16,6 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from tours import views
+
+handler404 = views.custom_handler404
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.main_view),
