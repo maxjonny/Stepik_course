@@ -23,5 +23,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.main_view),
     path('departure/<str:departure>', views.departure_view),
-    path('tour/<int:id>', views.tour_view)
+    path('tour/<int:pk>', views.tour_view)
 ]
